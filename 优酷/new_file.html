@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+.clearfix { 
+		  *zoom: 1; 
+		} 
+		.clearfix:before, 
+		.clearfix:after { 
+		  display: table; 
+		  line-height: 0; 
+		  content: ""; 
+		} 
+		.clearfix:after { 
+		  clear: both; 
+		}
+		dl, dd, dt{
+			padding: 0;
+			margin: 0;
+			font-family: "微软雅黑";
+		}
+		body{
+			padding: 0;
+			margin: 0;
+		}
+		.GoBuy{
+			padding: 0.8rem;
+			color: #fff;
+			background: #ff9402;
+			display: inline-block;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+		}
+		.cover{
+			width: 100%;
+			height: 100%;
+			position: fixed;
+			background:rgba(0,0,0,0.7);
+			top: 0;
+			display: none;
+		}
+		.close{
+			font-size: 30px;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+		.cover-cen{
+			width: 100%;
+			height: 90%;
+			background: #fff;
+			position: fixed;
+			bottom: -100%;
+		}
+		.cover-head{
+			padding-left: 5%;
+		    padding-top: 5%;
+		    padding-right: 5%;
+		}
+		.head-fl{
+			position: relative;
+			top: -30px;
+			float: left;
+		}
+		.head-fr{
+			float: left;
+			margin-left: 5%;
+		}
+		.head-fr dl dt{
+			color: red;
+		}
+		.head-fr dl dd{
+			line-height: 25px;
+		}
+		.cover-content{
+			padding-left: 5%;
+		    padding-top: 5%;
+		    padding-right: 5%;
+		}
+		.proChange span{
+			background: red;
+			padding: 0.8rem;
+			display: inline-block;
+			margin-bottom: 10px;
+			font-size: 12px;
+			color: #fff;
+		}
+		.HowMuch{
+			padding: 5%;
+		}
+		.How-fl{
+			float: left;
+		}
+		.How-fr{
+			float: right;
+		}
+		.How-fr i{
+			padding: 9px;
+			display: inline-block;
+			background: red;
+			color: #fff;
+		}
+		.Getchange{
+			display: none;
+			color: red;
+		}
+		.on{
+			background: green !important;
+		}
+
+		</style>
+	</head>
+	<script type="text/javascript" src="https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/jquery/jquery-1.10.2.min_65682a2.js"></script>
+	<body>
+				<span class="GoBuy">
+			加入购物车
+		</span>
+		<div class="cover">
+			<div class="cover-cen">
+				<!--<span class="close">
+					x
+				</span>-->
+				
+				
+				<div class="cover-head clearfix">
+					<div class="head-fl">
+						<img src="http://img.alicdn.com/imgextra/i4/1931820107/TB2g1EBcpXXXXbjXXXXXXXXXXXX_!!1931820107.jpg_120x120q50s150.jpg"  />
+					</div>
+					<div class="head-fr">
+						<dl>
+							<dt>￥36.2</dt>
+							<dd>库存:<span>117</span></dd>
+							<dd class="Getchange">已选:<span></span>,<span></span></dd>
+							<dd>请选择: <span>尺码</span> <span>颜色分类</span></dd>
+						</dl>
+					</div>
+				</div>
+				
+				<div style="width: 100%; height: 1px; background: red;"></div>
+				
+				<div class="cover-content">
+					<p>尺码</p>
+					<div class="proChange size">
+						<span>适合35-36码</span>
+						<span>适合31-36码</span>
+						<span>适合32-36码</span>
+						<span>适合33-36码</span>
+						<span>适合34-36码</span>
+						<span>适合35-36码</span>
+						<span>适合35-36码</span>
+					</div>
+					
+					<div style="width: 100%; height: 1px; background: red;"></div>
+				</div>
+				
+				
+				<div class="cover-content">
+					<p>颜色分类</p>
+					<div class="proChange color">
+						<span>薄款藕粉色</span>
+						<span>薄款藕粉色</span>	
+						<span>薄款藕粉色</span>
+						<span>薄款藕粉色</span>
+					</div>
+					
+					<div style="width: 100%; height: 1px; background: red;"></div>
+				</div>
+				
+				<div class="HowMuch">
+					<span class="How-fl">
+						购买数量
+					</span>
+					<span class="How-fr">
+						<i style="background: #000;">-</i>
+						<i>1</i>
+						<i>+</i>
+					</span>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="application/javascript">
+			d = 0;
+			e = 0;
+			$(".size span").click(function(){
+				d = 1;
+				var c = $(this).html();
+				$(".Getchange").show();
+				$(".head-fr dl dd:last span:eq(0)").hide();
+				$(".Getchange span:eq(0)").html(c);
+				$(".size span").removeClass("on");
+				$(this).addClass("on");
+				if(d==1 && e== 1){
+					$(".head-fr dl dd:eq(0) span").html("1213123");
+					$(".head-fr dl dd:last").hide();
+				}
+			})
+			$(".color span").click(function(){
+				e = 1;
+				var c = $(this).html();
+				$(".head-fr dl dd:last span:eq(1)").hide();
+				$(".Getchange span:eq(1)").html(c);
+				$(".color span").removeClass("on");
+				$(this).addClass("on");
+				if(d==1 && e== 1){
+					$(".head-fr dl dd:eq(0) span").html("1213123");
+					$(".head-fr dl dd:last").hide();
+				}
+			})
+			$(document).click(function(){
+				$(".cover-cen").animate({bottom:"-100%"},500,b);
+			})
+			$(".cover-cen").click(function(event){
+				event.stopPropagation();
+			})
+			function b(){
+				$(".cover").hide();
+			}
+			$(".GoBuy").click(function(event){
+				event.stopPropagation();
+				$(".cover").show();
+				$(".cover-cen").animate({bottom:"0"},500);
+			})
+			var a = 1; 
+			$(".How-fr i:eq(0)").click(function(){
+				var a = $(".How-fr i:eq(1)").html();
+				var a = parseInt(a);
+				if(a > 2){
+					$(".How-fr i:eq(0)").css({"background":"red"});
+				}else{
+					$(".How-fr i:eq(0)").css({"background":"#000"});
+				}
+				if(a <= 1){
+					return false;
+				}else{
+					$(".How-fr i:eq(1)").html(a - 1);
+					a = a - 1;
+				}
+			})
+			$(".How-fr i:eq(2)").click(function(){
+				var a = $(".How-fr i:eq(1)").html();
+				var a = parseInt(a);
+				if(a >= 1){
+					$(".How-fr i:eq(0)").css({"background":"red"});
+				}
+				$(".How-fr i:eq(1)").html(a + 1);
+				a = a + 1;
+			})
+//			$(".close").click(function(){
+//				$(".cover").hide();
+//			})
+		</script>
+</html>

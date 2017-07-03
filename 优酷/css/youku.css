@@ -1,0 +1,405 @@
+body,p,form,ul,li,a{margin:0;padding:0;list-style:none;text-decoration:none;}
+.clearfix {*zoom:1;} 
+.clearfix:before, 
+.clearfix:after{ 
+  display: table; 
+  line-height: 0; 
+  content: ""; 
+} 
+.clearfix:after{ 
+  clear:both;}
+header{
+	width:100%;
+	height:90px;
+	position:fixed;
+	z-index:1;
+}
+.header-fl{
+	width: 186px;
+	float: left;
+}
+.image{
+	width:137px;
+	height:40px;
+	display:inline-block;
+}
+.header-fl .image img{
+	width:120px;
+	height:30px;
+	padding:10px 0 0 10px;
+}
+.pindao{
+	width:44px;
+	height:34px;
+	display: inline-block;
+	position: relative;
+  top: -6px;
+  left: -8px;
+}
+ .pindao i{
+	width:16px;
+	height:16px;
+  background:url(http://static.youku.com/index/img/mheader/mheader@2x.png);
+  background-position:0 0;
+  background-size:96px 144px;
+  margin: 0 auto;
+  display: block;
+}
+.pindao span{
+	font-size: 12px;
+	font-family: "Microsoft YaHei", SimHei, helvetica, arial, verdana, tahoma, sans-serif;
+  color: #555;
+  height:16px;
+  text-align: center;
+  display: block;
+}
+.header-fr{
+	width:100px;
+	float:right;
+	margin-top:5px;
+}
+.sousuo{
+	width:44px;
+	height:34px;
+	display: inline-block;
+	margin-right: -3px;
+}
+.sousuo i{
+	background:url(http://static.youku.com/index/img/mheader/mheader@2x.png);
+	background-size: 96px 144px;
+	background-position: -24px 0;
+	width:16px;
+	height:16px;
+	margin: 0 auto;
+  display: block;
+}
+.sousuo span{
+	font-size: 12px;
+	font-family: "Microsoft YaHei", SimHei, helvetica, arial, verdana, tahoma, sans-serif;
+	color: #555;
+	height:16px;
+  text-align: center;
+  display: block;
+}
+.denglv{
+	width:44px;
+	height:34px;
+	display: inline-block;
+}
+.denglv i{
+	background:url(http://static.youku.com/index/img/mheader/mheader@2x.png);
+	background-size: 96px 144px;
+	background-position:0 -24px;
+	width:16px;
+	height:16px;
+	margin: 0 auto;
+  display: block;
+}
+.denglv span{
+	font-size: 12px;
+	font-family: "Microsoft YaHei", SimHei, helvetica, arial, verdana, tahoma, sans-serif;
+	color: #555;
+	height:16px;
+  text-align: center;
+  display: block;
+}
+.nav{
+	width:100%;
+	height:100px;
+}
+.nav-up{
+	width:100%;
+	height:50px;
+}
+.inpu{
+	width:222px;
+	height:27px;
+	margin: 4px 0 0 10px;
+
+}
+.souku{
+	width: 68px;
+  height: 31px;
+  font-size: 14px;
+  font-family: "Microsoft Yahei", "微软雅黑", Arial, sans-serif;
+  color:#fff;
+  border: 1px solid #1a67cb;
+  display:inline-block;
+  line-height:30px;
+  text-align:center;
+  background:#2e8ee2 url(../iamge/lantu.jpg) left  center no-repeat;
+	background-size: 16px 16px;
+	padding-left:4px;
+	position: relative;
+  right: 6px;
+  top: 1px;
+}
+.column{
+	width:100%;
+	height:50px;
+	margin-left: 10px;
+}
+.column li{
+	float:left;
+	line-height:50px;
+	padding-right:17px;
+	border-bottom:3px solid #bbb;
+}
+.column li a{
+	font-size: 18px;
+  font-family: "Microsoft YaHei", SimHei, helvetica, arial, verdana, tahoma, sans-serif;
+  color: #555;
+  
+}
+.column li .one-page{
+	border-bottom: 3px solid #06a7e1;
+  color: #3399e0;
+  padding-bottom: 13px;
+}
+.hot{
+	width:300px;
+	height:219px;
+	background:#f5f5f5;
+	margin: 0 auto;
+  margin-top: 20px;
+}
+.hot a img{
+	width:300px;
+	height:170px;
+}
+.hot-down a{
+	font-size: 14px;
+  font-family: "Microsoft YaHei", SimHei, helvetica, arial, verdana, tahoma, sans-serif;
+  color: #555;
+}
+.hot-down-down-one,.hot-down-down-two{
+	font-size: 12px;
+	font-family: arial, helvetica, verdana, tahoma, sans-serif;
+	color: #909090;
+}
+.hot-down-down-one i{
+	background: url(http://static.youku.com/index/img/mobile/yk@2x.png);
+	background-size: 300px 300px;
+	width:12px;
+	height:10px;
+	background-position: -30px 0;
+	display: inline-block;
+}
+
+.hot-down-down-two i{
+	background: url(http://static.youku.com/index/img/mobile/yk@2x.png);
+	background-size: 300px 300px;
+	width:12px;
+	height:10px;
+	background-position: -60px 0;
+	display: inline-block;
+}
+.main{
+	width:140px;
+	height:130px;
+	background:#f5f5f5;
+	margin: 20px 10px 0 10px;
+  float: left;
+}
+.main-up{
+	width:140px;
+	height:80px;
+	position:relative;
+}
+.main-up img{
+	width: 140px;
+	height:79px;
+}
+.main-up-one{
+	background: url(http://static.youku.com/index/img/mobile/yk@2x.png);
+	background-size: 300px 300px;
+	background-position: -60px -60px;
+	width:44px;
+	height:44px;
+	position: relative;
+  top: -83px;
+}
+.main-ct{
+	position:absolute;
+  top: 58px;
+  display: block;
+  background: rgba(0,0,0,0.4);
+  height: 21px;
+  width: 74px;
+}
+.main-ct span{
+	color: #ddd;
+	font:12px/20px "Microsoft YaHei", SimHei, helvetica, arial, verdana, tahoma, sans-serif;
+}
+.main-down{
+	width:130px;
+	height:40px;
+	padding:5px;
+}
+.main-down-one{
+	width:130px;
+	height:20px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.main-down-one a{
+	font-size: 14px;
+  font-family: "Microsoft YaHei", SimHei, helvetica, arial, verdana, tahoma, sans-serif;
+  color:#555555;
+}
+.content{
+	width:300px;
+	height:50px;
+	font-size: 26px;
+	font-family: "Microsoft YaHei", SimHei, helvetica, arial, verdana, tahoma, sans-serif;
+	color: #909090;
+	line-height:50px;
+	padding-left: 10px;
+}
+footer{
+	width:100%;
+	height:66px;
+	background:#fff;
+	position: fixed;
+  bottom: 0;
+}
+.chacha{
+	background:url(http://m.youku.com/video/images/close.png) no-repeat;
+	background-size: 12px 12px;
+  background-position: 50%;
+  width:8%;
+  height: 66px;
+  float:left;
+}
+.foot{
+	float:right;
+	width:90%;
+	height: 44px;
+	margin:11px 0;
+}
+.foot img{
+	width: 40px;
+  height: 40px;
+  border: solid 1px rgba(219,217,217,.4);
+  border-radius: 10px;
+  margin-left: -7px;
+  margin-top: 1px;
+}
+.foot span{
+	width: 140px;
+  height: 40px;
+  display: inline-block;
+  padding-left: 10px;
+  font:14px/20px "Microsoft YaHei", SimHei, helvetica, arial, verdana, tahoma, sans-serif;
+  position: relative;
+  top: -6px;
+  left: -4px;
+}
+.foot-fr{
+	width: 44px;
+  height: 28px;
+  text-align: center;
+  line-height: 28px;
+  background-color: #2692ff;
+  color: #fff;
+  border-radius:4px;
+  font-size:14px; 
+  float:right;
+  margin-top:8px;
+  margin-right:12px; 
+}
+.fott-down{
+	height:4px;
+	width:47px;
+	position:absolute;
+	left:42%;
+	bottom:8px;
+	font: 12px/20px "Microsoft YaHei", SimHei, helvetica, arial, verdana, tahoma, sans-serif;
+}
+.fott-down i{
+	width: 4px;
+  height: 4px;
+  background-color: #4d4d4d;
+  line-height: 3px;
+  border-radius: 3px;
+  margin-left: 4.5px;
+  float: left;
+  
+}
+.fott-down .on{
+	width: 8px;
+  background-color: #2692ff;
+}
+.sidebar{
+	width:66px;
+	position:fixed;
+	bottom:66px;
+	right:10px;
+}
+.sidebar ul{
+	width:50px;
+	float: right;
+}
+.sidebar ul li{
+	margin-bottom: 1px;
+}
+.sidebar ul li a{
+	display: block;
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  text-align: center;
+}
+.sidebar ul li .sidebar-one i{
+	background:url(http://static.youku.com/index/img/mobile/sidebar@2x.png);
+	background-size: 32px 130px;
+	width: 24px;
+  height: 26px;
+  margin-top: 13px;
+  background-position: 0 0;
+  display: inline-block;
+}
+.sidebar ul li .sidebar-two i{
+	background:url(http://static.youku.com/index/img/mobile/sidebar@2x.png);
+	background-size: 32px 130px;
+	width: 24px;
+  height: 26px;
+  margin-top: 13px;
+  background-position: 0 -100px;
+  display: inline-block;	
+}
+.sidebar ul li .sidebar-three i{
+	background:url(http://static.youku.com/index/img/mobile/sidebar@2x.png);
+	background-size: 32px 130px;
+	width: 24px;
+  height: 26px;
+  margin-top: 5px;
+  background-position: 0 -40px;
+  display: inline-block;	
+}
+.sidebar ul li .sidebar-three i span{
+	color: #fff;
+  width: 33px;
+  height: 15px;
+  display: block;
+  margin-top: 25px;
+  margin-left: -10px;
+  font-size: 14px;
+  font-family: "Microsoft YaHei", SimHei, helvetica, arial, verdana, tahoma, sans-serif;
+}
+.sidebar-li{
+	display:none;
+}
+.follme{
+	background: rgba(255,255,255,0.8);
+	width: 300px;
+  height: 50px;
+  font-size: 26px;
+  font-family: "Microsoft YaHei", SimHei, helvetica, arial, verdana, tahoma, sans-serif;
+  color: #909090;
+  line-height: 50px;
+  padding-left: 10px;
+  display:none;
+}
